@@ -1,0 +1,1032 @@
+*{
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+   font-family: 'Inter';
+   
+}
+
+body{
+    background: linear-gradient(to bottom,#282D31,#2C3034);
+}
+
+.banner .img{
+    width: 100%;
+    height: auto;
+}
+
+
+.banner .message_p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.banner .message_p img{
+    margin-top: -45px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgb(0, 18, 71),0 0 0 4px #fff, 0 0 0 7px #e2a517;
+    background: transparent;
+}
+
+.banner .title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-left: 135px;
+    margin-top: -80px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.banner .sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dbdbdb;
+}
+.banner .sub2 ion-icon{
+    margin-right: 5px;
+}
+.banner .sub2 div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 125px;
+    color: #ebebeb;
+    font-size: 12px;
+}
+.banner .sub2{
+    margin-bottom: 15px;
+}
+
+.line{
+    height: 3px;
+    background: rgb(240, 240, 240);
+}
+
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+header{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+header div{
+    display: flex;
+}
+header div img{
+    margin-top: 13px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+header .action{
+    display: relative;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 0;
+   
+}
+
+header .action a{
+    color: white;
+    display: flex;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+
+
+
+#inicio, #menu, #pedido{
+    visibility: hidden;
+    display: none;
+}
+.buttoms{
+    position: relative;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    visibility: hidden;
+    display: none;
+}
+
+.buttoms label{
+    width: 33.333%;
+    color: rgb(0, 18, 71);
+    opacity: 0.75;
+    text-align: center;
+    padding: 5px 0;
+    text-transform:  uppercase;
+    font-weight: 700;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.tabs input:nth-child(1):checked ~ .buttoms label:nth-child(1),
+.tabs input:nth-child(2):checked ~ .buttoms label:nth-child(2),
+.tabs input:nth-child(3):checked ~ .buttoms label:nth-child(3){
+    opacity: 1;
+
+}
+
+.underline{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 33.333%;
+    background: rgb(0, 18, 71);
+    height: 3px;
+    transition: 0.3s;
+
+}
+
+.tabs input:nth-child(1):checked ~ .buttoms .underline{
+    left: 0;
+
+}
+
+.tabs input:nth-child(2):checked ~ .buttoms .underline{
+    left: 33.333%;
+    
+}
+
+.tabs input:nth-child(3):checked ~ .buttoms .underline{
+    left: 66.666%;
+    
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    transition: 0.3s;
+    overflow: hidden;
+    
+    
+}
+
+.content .box{
+    position: relative;
+    width: 100%;
+
+}
+
+.content .data{
+    width: 100%;
+}
+
+.chatlist{
+    max-height: 90%;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.chatlist .block{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    gap: 10px;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.chatlist .block:hover{
+}
+
+.chatlist .block .imgbx{
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;border: 1px solid #111;
+}
+
+
+.chatlist .block .details{
+    width: 100%;
+}
+
+.chatlist .block .details .todo{
+    width: 100%;
+    overflow: hidden;
+}
+.details .listHead{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+ .details .listHead div{
+    height: 100%;
+}
+
+.details .listHead div span{
+    margin-top: -25px;
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff
+}
+.details .listHead h1{
+    font-size: 12px;
+    width:max-content;
+    color: #ffff;
+    text-align: left;
+    margin-left: 8px;
+    line-height: 25px;
+    transition: all 0.9s ease;
+    font-weight: 400;
+}
+
+
+
+
+.chatlist .block .details .productos1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.chatlist .block .details .message_p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.chatlist .block .details .btn70{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.chatlist .block .details .btn70 .plus{
+    color: #e2a517;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.chatlist .block .details .btn70 h2{
+    color: #059600;
+}
+
+.block .details .btn70 .boton{
+    width: 180px;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #e2a517;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.chatlist .block .details .message_p img{
+    width: 220px;
+    border-radius: 50%;border: 1px solid #111;
+    box-shadow: 1px 1px 5px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.food{
+    padding-bottom: 5px;
+    width: 49%;
+    justify-content: space-between;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    border-radius: 7px;
+    margin-top: 15px;
+    background: linear-gradient(to right,#2C343B,#31353a);
+}
+.food .derecha i{
+    z-index: 1;
+}
+.food .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    background: transparent;
+}
+.food .img img{
+    width: 100px;
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    5px 5px 5px rgba(0,0,0,0.3),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.food .name{
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-right: 10px;
+    background: transparent;
+}
+
+.food .name h3{
+    color: #fff;
+    font-size: 13px;
+    background: transparent;
+}
+
+.food .name p{
+    color: #fff;
+    font-size: 12px;
+    background: transparent;
+}
+
+.products-preview{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items:flex-end;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.products-preview .preview{
+    height: 90%;
+    overflow-y: auto;
+    margin-bottom: 68px;
+    width: 100%;
+    padding-bottom: 2rem;
+    background: linear-gradient(to bottom,#282D31,#2C3034);
+}
+.products-preview .preview .head{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    position: absolute;
+}
+.products-preview .preview .head span{
+    font-weight: 800;
+    font-size: 25px;
+    
+}
+.products-preview .preview .contenido{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.products-preview.active{
+    right: 0;
+}
+
+.products-preview .preview img{
+    width: 100%;
+    height: auto;
+    margin-top: -105px;
+    z-index: 0;
+}
+
+.products-preview .preview ion-icon{
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    padding: 7px 15px 7px 15px;
+    text-shadow:0.1em 0.1em 0.05em #333;
+}
+
+.products-preview .preview .close:hover{
+    transform: rotate(90deg);
+}
+
+.products-preview .preview h3{
+    color: #fff;
+    padding: 0.5rem 0;
+    font-size: 25px;
+    text-align: left;
+}
+
+.products-preview .preview p{
+    color: #ffff;
+    font-size: 12px;
+    text-align: left
+}
+.preview .price .boton{
+    margin-top: 15px;
+   color: #e2a517;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+}
+
+
+.preview .btn29{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;text-align: center;
+    margin-bottom: 25px;
+}
+
+.btn39{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    bottom: 69px;
+    color: #fff;
+    z-index: 1;
+    background: linear-gradient(to bottom,#282D31,#2C3034);
+}
+
+.chats .details{
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.food-total{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 15px;
+    overflow-x:auto;
+}
+.preview .btn29 label{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #e2a517;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -4px -2px 2px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+}
+.btn39 label{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom,#282D31,#2C3034);
+    font-weight: 700;
+    position: fixed;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-top: 1px solid #fff;
+}
+
+
+.btn39 label .num{
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: -15px;
+    margin-top: -20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn39 label .marco{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn39 label .marco1{
+    color: #cf9306;
+}
+
+.preview  p{
+    color: #666;
+    font-size: 15px;
+}
+
+table {
+    margin:5px;
+    
+    width: 97%;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+ }
+ tr{
+    color: #fff;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -4px -2px 2px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    border-radius:25px;
+    height: 100px;
+ }
+
+ 
+
+ th{
+    padding: 15px;
+ }
+
+
+ thead{
+   background-color: #faf0dc;
+    color: #cf9306;
+ }
+
+tbody  tr td a{
+    background: rgb(212, 36, 36);
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    
+ }
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.wrapper .cont87{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+}
+
+.wrapper .cont87 .dec{
+    background: #e2a517;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 35px;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -4px -2px 2px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    text-shadow:2px 2px 1px #333;
+}
+.wrapper .cont87 .inc{
+    background: #e2a517;
+    margin-top: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 35px;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -2px -2px 2px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    text-shadow:2px 2px 1px #333;
+}
+.dec, .wrapper .cont87 .inc{
+    padding-right: 14px;
+}
+
+.wrapper .cont87 .value{
+   
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+
+.wrapper .cont87 .value2{
+   
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+
+
+
+.wrapper .cont87 .value3{
+   
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+tbody tr td{
+    padding-top: 15px;
+}
+
+.food3 .part1 h3{
+    color: #fff;
+}
+.food3 .part2 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #cf9306;
+    font-weight: 800;
+}
+.food3 .part2 h3{
+    color: #cf9306;
+    font-size: 25px;
+}
+.food3{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    margin-bottom: 35px;
+}
+
+.food4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    
+}
+
+.food4 .ele{
+    display: block;
+}
+
+.food4 .ere{
+    margin-top: 40px;
+}
+
+
+.food3 label{
+    width: 280px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    font-weight: 700;
+    background: #cf9306;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    font-size: 16px;
+}
+
+footer{
+    position: fixed;
+}
+
+.food4 .volver{
+    background: #001247;
+    color: #fff;
+}
+
+
+.blue{
+
+    width: 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: rgb(0, 18, 71);
+    box-shadow: 0 0 0 1px rgb(0, 18, 71),0 0 0 2px #fff, 0 0 0 3px #000e36;
+}
+
+.box.status{
+    display: flex;
+    align-items:flex-end;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.box.status .chatlist{
+    height: 90%;
+    overflow-y: auto;
+    margin-bottom: 68px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(to bottom,#282D31,#2C3034);
+}
+
+.box.status.active{
+    top: 0;   
+}
+.Nombre input{
+    border: 1px solid #000;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.tipo select{
+    border: 1px solid #000;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 15px;
+}
+
+
+.Especificacion{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #42474d;
+    padding: 7px;
+    border-radius: 35px;
+ }
+.Especificacion a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px ;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;  
+    width: 160px;
+ } 
+ 
+.Especificacion .selected{
+    background: #282D31;
+    font-weight: 800;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+ }
+
+.Modo{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #42474d;
+    padding: 7px;
+    border-radius: 35px;
+ }
+ .Modo a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 35px 7px 35px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    width: 150px;
+ } 
+ 
+.Modo .selected{
+    background: #282D31;
+    font-weight: 800;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+ }
+
+.observa{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.observa textarea{
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.extras{
+    width: 100%;
+    margin-top: 15px;
+    
+}
+.extras p{
+    font-size: 25px;
+    color: #cf9306;
+    margin-bottom: 10px;
+}
+.extras .radio{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.extras .radio .botones{
+    display: flex;
+    width: 50%;
+}
+.extras .radio .botones input{
+    margin-right: 10px;
+}
+
+.extras .radio label{
+    text-align: left;
+    color: #fff;
+}
+.food2 .table{
+    width: 100%;
+    height: auto;
+    background: #42474d;
+    border-radius: 50px 10px 10px 50px ;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -1px -1px 0px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.food2 .table img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.food2 .table .nombres{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-left: 15px;
+}
+
+.food2 .table .nombres2{
+    width: 100%;
+}
+.food2 .table .nombres span{
+    height: 100%;
+    color: #fff;
+}
+.food2 .table .nombres .cantidad{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.food2 .table .nombres .cantidad .inc{
+    background: linear-gradient(to bottom,#181a1d,#2C3034);
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -2px -2px 2px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    text-shadow:2px 2px 1px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food2 .table .nombres .cantidad .dec{
+    background: linear-gradient(to bottom,#181a1d,#2C3034);
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.2),
+    3px 3px 3px rgba(0,0,0,0.3),
+    inset -2px -2px 2px rgba(255, 255, 255, 0.2),
+    inset 3px 3px 3px rgba(0,0,0,0.1);
+    text-shadow:2px 2px 1px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food2 .table .nombres .cantidad .dec span{
+    margin-left: 10px;
+}
+.food2 .table .nombres .cantidad .value{
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: #fff;
+}
+.food2 .table .precio{
+    display: block;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 20%;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.food2 .table .precio div{
+    height: 50%;
+}
+.food2 .table .precio .div1 span ion-icon{
+    font-size: 45px;
+    margin-top: -15px;
+    margin-right: -25px;
+}
+.food2 .table .precio .div1,
+.food2 .table .precio .div2{
+    display: flex;
+    justify-content: right;
+}
+
+.food2 .table .precio .div2{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+/**/
+
+.box.status .details .listHead .head{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    
+}
+.box.status .details .listHead{
+    padding: 0;
+}
+
+.box.status .details .listHead .head div{
+    height: 100%;
+}
+.box.status .details .listHead .head ion-icon{
+    color: #fff;
+    font-size: 30px;
+}
+
+.box.status .details .listHead .head span{
+    margin-top: 5px;
+}
+/**/
